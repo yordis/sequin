@@ -12,16 +12,10 @@
   import { Label } from "$lib/components/ui/label";
   import { RadioGroup, RadioGroupItem } from "$lib/components/ui/radio-group";
   import { ChevronRight } from "lucide-svelte";
-  import {
-    CirclePlay,
-    CircleStop,
-    Database,
-    Plug,
-    Webhook,
-  } from "lucide-svelte";
+  import { Database, Plug, Webhook } from "lucide-svelte";
   import { formatRelativeTimestamp } from "$lib/utils";
   import HealthPill from "../health/HealthPill.svelte";
-  import { Badge } from "$lib/components/ui/badge";
+  import AzureEventHubIcon from "../../icons/azure_event_hub.svelte";
   import DatabaseConnectionAlert from "../components/DatabaseConnectionAlert.svelte";
   import LinkPatchNavigate from "$lib/components/LinkPatchNavigate.svelte";
   import SQSIcon from "../../icons/sqs.svelte";
@@ -99,6 +93,11 @@
       id: "rabbitmq",
       name: "RabbitMQ",
       icon: RabbitMqIcon,
+    },
+    {
+      id: "azure_event_hub",
+      name: "Azure EventHub",
+      icon: AzureEventHubIcon,
     },
   ];
 
